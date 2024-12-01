@@ -156,28 +156,36 @@ body {
   gap: 0;
   min-height: 100dvh;
   justify-content: flex-start;
+  line-height: 1.2;
 }
 
 .bg-image {
   display: block;
   position: fixed;
-  height: initial;
   max-width: none;
   width: 100%;
   /* width: initial; */
 }
 .bg-image--top {
+  height: 14.5rem;
   top: 0;
 }
 .bg-image--bottom {
   bottom: 0;
+  height: 50%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2.625rem;
 }
 
 main {
   align-items: center;
   display: flex;
   flex-direction: column;
-  gap: 0;
+  gap: 3rem;
   flex: 1 1 auto;
   justify-content: center;
   padding: 5.125rem 1.5rem 0;
@@ -185,6 +193,28 @@ main {
 }
 
 /* @import "components/card"; */
+.header {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  text-align: center;
+}
+.header__title {
+  color: hsl(300, 43%, 22%);
+  font-size: 2.625rem;
+  font-weight: 700;
+  letter-spacing: -1.5px;
+  line-height: 0.8;
+}
+.header__description {
+  color: hsl(303, 10%, 53%);
+  font-size: 1.25rem;
+  font-weight: 500;
+  letter-spacing: -1.2px;
+  width: 99%;
+}
+
 /* .attribution {
   color: $white;
   font-size: 0.75rem;

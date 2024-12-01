@@ -1,0 +1,21 @@
+.header {
+  align-items: center;
+  @include flex-column($space-20);
+  text-align: center;
+
+  &__title {
+    color: $very-dark-magenta;
+    font-size: $font-size-42;
+    font-weight: 700;
+    letter-spacing: $letter-spacing--1_5;
+    line-height: $line-height-80;
+  }
+
+  &__description {
+    color: $dark-grayish-magenta;
+    font-size: $font-size-20;
+    font-weight: 500;
+    letter-spacing: $letter-spacing--1_2;
+    width: 99%;
+  }
+}

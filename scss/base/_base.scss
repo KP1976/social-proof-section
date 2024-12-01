@@ -11,28 +11,34 @@ body {
   @include flex-column();
   min-height: 100dvh;
   justify-content: flex-start;
+  line-height: 1.2;
 }
 
 .bg-image {
   display: block;
   position: fixed;
-  height: initial;
   max-width: none;
   width: 100%;
   /* width: initial; */
 
   &--top {
+    height: 14.5rem;
     top: 0;
   }
 
   &--bottom {
     bottom: 0;
+    height: 50%;
   }
+}
+
+.container {
+  @include flex-column($space-42);
 }
 
 main {
   align-items: center;
-  @include flex-column();
+  @include flex-column($space-48);
   flex: 1 1 auto;
   justify-content: center;
   padding: $space-82 $space-24 0;
