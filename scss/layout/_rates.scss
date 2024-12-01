@@ -1,0 +1,5 @@
+.rates {
+  @include flex-column($space-16);
+}
+
+@import "../components/_rate-card";

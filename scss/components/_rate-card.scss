@@ -1,0 +1,22 @@
+.rate-card {
+  align-items: center;
+  background-color: $light-grayish-magenta;
+  border-radius: $border-radius-8;
+  padding: $space-14 0;
+  @include flex-column($space-12);
+
+  &__stars {
+    @include flex-row($space-8);
+  }
+
+  &__star {
+    width: 17px;
+  }
+
+  &__title {
+    color: $very-dark-magenta;
+    font-size: $font-size-18;
+    font-weight: 700;
+    letter-spacing: $letter-spacing--0_5;
+  }
+}
