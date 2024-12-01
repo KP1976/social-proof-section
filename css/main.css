@@ -158,6 +158,21 @@ body {
   justify-content: flex-start;
 }
 
+.bg-image {
+  display: block;
+  position: fixed;
+  height: initial;
+  max-width: none;
+  width: 100%;
+  /* width: initial; */
+}
+.bg-image--top {
+  top: 0;
+}
+.bg-image--bottom {
+  bottom: 0;
+}
+
 main {
   align-items: center;
   display: flex;
