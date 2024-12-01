@@ -149,9 +149,8 @@ body {
 
 body {
   align-items: center;
-  /* background-color: $dark-cyan; */
-  /* font-family: $font-name; */
-  /* font-size: $font-size-18; */
+  background-color: hsl(0, 0%, 100%);
+  font-family: "League Spartan", sans-serif;
   display: flex;
   flex-direction: column;
   gap: 0;
@@ -161,13 +160,12 @@ body {
 
 main {
   align-items: center;
-  /* background-color: $dark-cyan; */
   display: flex;
   flex-direction: column;
   gap: 0;
   flex: 1 1 auto;
   justify-content: center;
-  /* padding: $space-24; */
+  padding: 5.125rem 1.5rem 0;
   width: 100%;
 }
 
