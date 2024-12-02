@@ -1,0 +1,34 @@
+.card {
+  background-color: $very-dark-magenta;
+  border-radius: $border-radius-8;
+  color: $light-grayish-magenta;
+  padding: $space-40 $space-32 $space-30;
+  @include flex-column($space-26);
+
+  &__body {
+    @include flex-row($space-20);
+  }
+
+  &__avatar {
+    display: block;
+    max-width: 40px;
+    border-radius: 50%;
+  }
+
+  &__name {
+    font-weight: 500;
+    letter-spacing: $letter-spacing-0_7;
+  }
+
+  &__location {
+    color: $soft-pink;
+    font-weight: 400;
+    letter-spacing: $letter-spacing-0_4;
+  }
+
+  &__description {
+    font-weight: 500;
+    letter-spacing: $letter-spacing-0_15;
+    line-height: $line-height-140;
+  }
+}
