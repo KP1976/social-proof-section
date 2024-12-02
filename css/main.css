@@ -207,7 +207,7 @@ main {
   line-height: 0.8;
 }
 .header__description {
-  color: hsl(303, 10%, 53%);
+  color: hsl(303, 9%, 48%);
   font-size: 1.25rem;
   font-weight: 500;
   letter-spacing: -1.2px;
@@ -284,15 +284,13 @@ main {
   line-height: 1.4;
 }
 
-/* .attribution {
-  color: $white;
+.attribution {
+  color: hsl(300, 43%, 22%);
   font-size: 0.75rem;
   padding: 1rem;
   text-align: center;
   z-index: 0;
-
-  &__link {
-    color: $very-dark-desaturated-blue;
-    font-weight: 700;
-  }
-} */
+}
+.attribution__link {
+  font-weight: 700;
+}
