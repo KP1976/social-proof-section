@@ -3,7 +3,11 @@
   font-size: 0.75rem;
   padding: 1rem;
   text-align: center;
-  z-index: 0;
+
+  @include respond-to($breakpoint-desktop) {
+    bottom: 0;
+    position: absolute;
+  }
 
   &__link {
     font-weight: 700;
