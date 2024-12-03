@@ -3,12 +3,23 @@
   @include flex-column($space-20);
   text-align: center;
 
+  @include respond-to($breakpoint-desktop) {
+    flex-basis: 26.25rem;
+    text-align: left;
+  }
+
   &__title {
     color: $very-dark-magenta;
     font-size: $font-size-42;
     font-weight: 700;
     letter-spacing: $letter-spacing--1_5;
     line-height: $line-height-80;
+
+    @include respond-to($breakpoint-tablet) {
+      font-size: $font-size-54;
+      letter-spacing: $letter-spacing--1_1;
+      line-height: $line-height-90;
+    }
   }
 
   &__description {
@@ -17,5 +28,10 @@
     font-weight: 500;
     letter-spacing: $letter-spacing--1_2;
     width: 99%;
+
+    @include respond-to($breakpoint-tablet) {
+      letter-spacing: $letter-spacing--1_1;
+      width: 100%;
+    }
   }
 }

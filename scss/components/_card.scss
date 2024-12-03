@@ -5,6 +5,18 @@
   padding: $space-40 $space-32 $space-30;
   @include flex-column($space-26);
 
+  &:nth-child(2) {
+    @include respond-to($breakpoint-tablet) {
+      align-self: center;
+    }
+  }
+
+  &:nth-child(3) {
+    @include respond-to($breakpoint-tablet) {
+      align-self: end;
+    }
+  }
+
   &__body {
     @include flex-row($space-20);
   }

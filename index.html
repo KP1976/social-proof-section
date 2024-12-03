@@ -12,12 +12,30 @@
     <title>Frontend Mentor | Social proof section</title>
   </head>
   <body>
-    <img class="bg-image bg-image--top" src="./assets/images/bg-pattern-top-mobile.svg" alt="" />
+    <picture>
+      <source media="(max-width: 756px)" srcset="./assets/images/bg-pattern-top-mobile.svg" />
+      <source media="(min-width: 757px)" srcset="./assets/images/bg-pattern-top-desktop.svg" />
+      <img
+        src="./assets/images/bg-pattern-top-desktop.svg"
+        alt="image-header"
+        class="bg-image bg-image--top"
+      />
+    </picture>
+    <picture>
+      <source media="(max-width: 756px)" srcset="./assets/images/bg-pattern-bottom-mobile.svg" />
+      <source media="(min-width: 757px)" srcset="./assets/images/bg-pattern-bottom-desktop.svg" />
+      <img
+        src="./assets/images/bg-pattern-bottom-desktop.svg"
+        alt="image-header"
+        class="bg-image bg-image--bottom"
+      />
+    </picture>
+    <!-- <img class="bg-image bg-image--top" src="./assets/images/bg-pattern-top-mobile.svg" alt="" />
     <img
       class="bg-image bg-image--bottom"
       src="./assets/images/bg-pattern-bottom-mobile.svg"
       alt=""
-    />
+    /> -->
     <main>
       <div class="container">
         <header class="header">

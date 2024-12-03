@@ -1,5 +1,17 @@
 .cards {
   @include flex-column($space-16);
+
+  @include respond-to($breakpoint-tablet) {
+    align-items: start;
+    display: grid;
+    height: 21.625rem;
+    gap: 0 $space-30;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @include respond-to($breakpoint-desktop) {
+    height: 16.75rem;
+  }
 }
 
 @import "../components/_card";

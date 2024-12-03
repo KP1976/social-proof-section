@@ -14,26 +14,35 @@ body {
   line-height: 1.2;
 }
 
+picture {
+  width: 100%;
+}
+
 .bg-image {
   display: block;
   position: fixed;
   max-width: none;
-  width: 100%;
-  /* width: initial; */
+  width: initial;
+  z-index: -1;
 
   &--top {
-    height: 14.5rem;
     top: 0;
   }
 
   &--bottom {
     bottom: 0;
-    height: 50%;
+    right: 0;
   }
 }
 
 .container {
   @include flex-column($space-42);
+
+  @include respond-to($breakpoint-desktop) {
+    align-items: center;
+    flex-direction: row;
+    gap: 0 9.375rem;
+  }
 }
 
 main {
@@ -41,6 +50,16 @@ main {
   @include flex-column($space-48);
   flex: 1 1 auto;
   justify-content: center;
+  max-width: 69.375rem;
   padding: $space-82 $space-24 0;
   width: 100%;
+
+  @include respond-to($breakpoint-tablet) {
+    padding-top: 0;
+  }
+
+  @include respond-to($breakpoint-desktop) {
+    gap: $space-74;
+    padding: 0;
+  }
 }

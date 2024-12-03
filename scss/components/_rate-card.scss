@@ -5,6 +5,30 @@
   padding: $space-14 0;
   @include flex-column($space-12);
 
+  @include respond-to($breakpoint-tablet) {
+    width: 80%;
+  }
+
+  @include respond-to($breakpoint-desktop) {
+    flex-direction: row;
+    gap: 0 $space-30;
+    height: 3.5rem;
+    padding-left: $space-32;
+    width: 27.875rem;
+  }
+
+  &:nth-child(2) {
+    @include respond-to($breakpoint-tablet) {
+      justify-self: center;
+    }
+  }
+
+  &:nth-child(3) {
+    @include respond-to($breakpoint-tablet) {
+      justify-self: end;
+    }
+  }
+
   &__stars {
     @include flex-row($space-8);
   }

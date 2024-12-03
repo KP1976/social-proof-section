@@ -1,5 +1,16 @@
 .rates {
   @include flex-column($space-16);
+
+  @include respond-to($breakpoint-tablet) {
+    display: grid;
+    gap: $space-16 0;
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  @include respond-to($breakpoint-desktop) {
+    flex-basis: 33.75rem;
+    height: fit-content;
+  }
 }
 
 @import "../components/_rate-card";
